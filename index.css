@@ -8,18 +8,18 @@
 }
 
 .bg-regal-blue {
-  background-color: #2a2840;
+  background-color: var(--regal-blue);
 }
 
 .bg-regal-blue-dark {
-  background-color: #000022;
+  background-color: var(--regal-blue-dark);
 }
 .text-regal-blue {
-  color: #2a2840;
+  color: var(--regal-blue);
 }
 
 .text-regal-blue-dark {
-  color: #000022;
+  color: var(--regal-blue-dark);
 }
 
 /* header search bar */
