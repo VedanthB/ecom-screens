@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://argon-css.netlify.app/components/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/pages/product-page/product-listing.css">
+
+
+    <title>Blinder | Shop</title>
+</head>
+
+<body class="bg-regal-blue">
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-regal-blue-dark fixed z-50">
+        <div class="flex justify-around align-items-center h-full w-full">
+            <!-- logo -->
+            <div class="flex justify-center align-items-center">
+                <a href="/index.html">
+                    <h5
+                        class="h5 cursor-pointer mr-10 text-cyan-500 logo text-sm italic inline-flex justify-center align-items-center">
+                        <img src="/assets/icons8-friday-night-funkin.svg" class="w-14 h-14" alt="logo">
+                        BLINDer
+                    </h5>
+                </a>
+                <a href="/index.html">
+                    <h6 class="h6 mr-6 cursor-pointer text-white text-hover-cyan-500"> Home </h6>
+                </a>
+                <a href="/pages/product-page/product-listing.html">
+                    <h6 class="h6 cursor-pointer text-white text-hover-cyan-500"> Shop </h6>
+                </a>
+            </div>
+            <!-- logo -->
+
+            <!-- searchbar -->
+            <form class="search__bar__container">
+                <input type="text" class="search__bar" placeholder="Search">
+                <a href="#"><i class="fas fa-search search__icon text-cyan-500"></i></a>
+            </form>
+            <!-- searchbar -->
+
+
+            <!-- icons (wishlist and cart) -->
+            <div class="flex justify-center align-items-center">
+                <a href="#" class="btn btn-solid-cyan text-white mr-5">Login</a>
+                <!-- wishlist -->
+                <button style="background: transparent;"
+                    class="btn flex flex-col text-cyan-500 text-hover-cyan-400 tooltip">
+                    <span><i class="text-lg fas fa-heart "></i> </span>
+
+                    <span style="text-transform: none;" class="tooltip-text">Wishlist</span>
+
+                </button>
+                <!-- cart -->
+                <button style="background: transparent;"
+                    class="btn flex align-items-center flex-col text-cyan-500 text-hover-cyan-400 tooltip">
+                    <span class="btn-icon badge-container">
+                        <i class="text-cyan-500 fas fa-shopping-cart"></i>
+                        <span class="status-badge bg-cyan-500 status-badge-number">0</span>
+                    </span>
+                    <span style="text-transform: none;" class="tooltip-text shadow-lg">Cart</span>
+                </button>
+            </div>
+            <!-- icons (wishlist and cart) -->
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- main section -->
+    <main style="top: 5rem; min-height: 100vh" class="relative w-full justify-end flex">
+        <!-- filters -->
+        <div style="top: 8rem" class="filters-sidebar-container relative ml-10 p-5">
+            <div class="flex justify-between align-items-center">
+                <div class="font-semibold text-xl text-white">Filters</div>
+                <a class="btn btn-link-cyan text-white">clear</a>
+            </div>
+
+            <div class="spacer-1rem"></div>
+
+            <div class="divider"></div>
+
+            <div class="spacer-1rem"></div>
+
+            <ul class="flex flex-col">
+                <li class="text-white pt-3 pb-3 text-lg">
+                    Categories
+                </li>
+                <li class="pt-3 pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        Jackets
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        skateboards
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white  text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        caps
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        accessories
+                    </label>
+                </li>
+            </ul>
+
+            <div class="spacer-1rem"></div>
+
+            <div class="divider"></div>
+
+            <div class="spacer-1rem"></div>
+
+
+            <ul class="flex flex-col">
+                <li class="text-white pt-3 pb-3 text-lg">
+                    Brands
+                </li>
+                <li class="pt-3 pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        Santa Cruz
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        Vans of The Wall
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        Urban Monkey
+                    </label>
+                </li>
+                <li class="pb-3">
+                    <label for="" class="text-white text-lg">
+                        <input type="checkbox" name="" id="" value="" class="mr-3" />
+                        Thrasher
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <!-- filters -->
+
+        <!-- products -->
+        <div class="products-display-container">
+
+            <div class="flex w-full justify-end">
+                <div class="m-20 flex justify-center align-items-center">
+                    <div class="text-xl text-white mr-3">Sort By :</div>
+                    <div class="custom-select">
+                        <select class="bg-regal-blue-dark text-white text-xl">
+                            <option selected disabled>Choose a filter</option>
+                            <option value="">Best Selling</option>
+                            <option value="">New Arrivals</option>
+                            <option value="">Low to High</option>
+                            <option value="">High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div style="gap: 4rem;" class="grid grid-cols-3">
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-white">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-white">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3 text-regal-blue" />
+                            <div class="flex justify-between">
+                                <div class="product-price text-cyan-500">
+                                    <small class="line-through mr-2 text-white">Rs.96.00</small>Rs. 230.99
+                                </div>
+                                <div class="flex">
+                                    <a><i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                    <a><i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- products -->
+    </main>
+
+    <!-- main section -->
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+    <!-- footer -->
+    <footer style="bottom: 0"
+        class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-regal-blue-dark">
+        <div class="text-grey-700">
+            Made with
+            <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+            <a href="https://github.com/VedanthB" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-cyan">vedanth</a>
+        </div>
+        <div class="flex mt-3 align-items-center justify-center">
+            <a href="https://github.com/VedanthB">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://twitter.com/vedanth_X0X0">
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vedanth-bora/">
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://dev.to/vedanthb">
+                <i class="fab fa-dev text-cyan-700"></i>
+            </a>
+        </div>
+        <div class="text-grey-700 mt-3">
+            Designed using
+            <a href="https://argon-css.netlify.app/" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-cyan">Argon CSS</a>
+        </div>
+
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
