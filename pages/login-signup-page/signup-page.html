@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://argon-css.netlify.app/components/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/pages/product-page/product-listing.css">
+    <title>Blinder ECOM</title>
+</head>
+
+<body class="bg-regal-blue">
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-regal-blue-dark fixed z-50">
+        <div class="flex justify-around align-items-center h-full w-full">
+            <!-- logo -->
+            <div class="flex justify-center align-items-center">
+                <a href="/index.html">
+                    <h5
+                        class="h5 cursor-pointer mr-10 text-cyan-500 logo text-sm italic inline-flex justify-center align-items-center">
+                        <img src="/assets/icons8-friday-night-funkin.svg" class="w-14 h-14" alt="logo">
+                        BLINDer
+                    </h5>
+                </a>
+                <a href="/index.html">
+                    <h6 class="h6 mr-6 cursor-pointer text-white text-hover-cyan-500"> Home </h6>
+                </a>
+                <a href="/pages/product-page/product-listing.html">
+                    <h6 class="h6 cursor-pointer text-white text-hover-cyan-500"> Shop </h6>
+                </a>
+            </div>
+            <!-- logo -->
+
+            <!-- searchbar -->
+            <form class="search__bar__container">
+                <input type="text" class="search__bar" placeholder="Search">
+                <a href="#"><i class="fas fa-search search__icon text-cyan-500"></i></a>
+            </form>
+            <!-- searchbar -->
+
+
+            <!-- icons (wishlist and cart) -->
+            <div class="flex justify-center align-items-center">
+                <a href="/pages/login-signup-page/login-page.html" class="btn btn-solid-cyan text-white mr-5">Login</a>
+                <!-- wishlist -->
+                <a href="/pages/wishlist-page/wishlist-page.html">
+                    <button style="background: transparent;"
+                        class="btn flex flex-col text-cyan-500 text-hover-cyan-400 tooltip">
+                        <span><i class="text-lg fas fa-heart "></i> </span>
+
+                        <span style="text-transform: none;" class="tooltip-text">Wishlist</span>
+
+                    </button>
+                </a>
+
+                <!-- cart -->
+                <a href="/pages/cart-page/cart-page.html">
+                    <button style="background: transparent;"
+                        class="btn flex align-items-center flex-col text-cyan-500 text-hover-cyan-400 tooltip">
+                        <span class="btn-icon badge-container">
+                            <i class="text-cyan-500 fas fa-shopping-cart"></i>
+                            <span class="status-badge bg-cyan-500 status-badge-number">0</span>
+                        </span>
+                        <span style="text-transform: none;" class="tooltip-text shadow-lg">Cart</span>
+                    </button>
+                </a>
+
+            </div>
+            <!-- icons (wishlist and cart) -->
+        </div>
+    </header>
+    <!-- header -->
+
+    <main style="top: 5rem; min-height: 100vh;" class="relative w-full flex justify-center align-items-center">
+        <div style="margin: auto;  background-color:  #0000227c;" class="h=96 w-96 p-10 shadow-2xl rounded-2xl">
+
+            <h3 class="text-2xl font-normal text-center text-white mb-20">Sign Up</h3>
+
+
+            <div class="mb-5">
+                <div class="input-container text-white">
+                    <input type="text" id="email" class="input-outlined input-outlined-cyan" autocomplete="off"
+                        placeholder=" " />
+                    <label style="background-color: #0000227c;" for="email" class="input-label ">Email *</label>
+                </div>
+            </div>
+
+
+            <div class="mb-5">
+                <div class="input-container text-white">
+                    <input type="text" id="email" class="input-outlined input-outlined-cyan" autocomplete="off"
+                        placeholder=" " />
+                    <label style="background-color: #0000227c;" for="email" class="input-label ">Password *</label>
+                </div>
+            </div>
+
+            <div class="flex justify-between mb-10">
+                <div class="flex justify-center align-items-center">
+                    <input type="checkbox" class="mr-3" name="" id="">
+                    <h6 class="text-lg text-white font-normal">Remember me</h6>
+                </div>
+                <a href="/pages/login-signup-page/login-page.html" class="btn btn-link-cyan text-white">Login ?</a>
+            </div>
+
+            <div>
+                <a href="" class="btn btn-link-cyan text-white">Forgot Password ?</a>
+
+            </div>
+        </div>
+    </main>
+
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+
+    <!-- footer -->
+    <footer style="bottom: 0"
+        class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-regal-blue-dark">
+        <div class="text-grey-700">
+            Made with
+            <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+            <a href="https://github.com/VedanthB" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-cyan">vedanth</a>
+        </div>
+        <div class="flex mt-3 align-items-center justify-center">
+            <a href="https://github.com/VedanthB">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://twitter.com/vedanth_X0X0">
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vedanth-bora/">
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+            </a>
+            <a href="https://dev.to/vedanthb">
+                <i class="fab fa-dev text-cyan-700"></i>
+            </a>
+        </div>
+        <div class="text-grey-700 mt-3">
+            Designed using
+            <a href="https://argon-css.netlify.app/" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-cyan">Argon CSS</a>
+        </div>
+
+    </footer>
+    <!-- footer -->
+    <script src=" index.js">
+    </script>
+</body>
+
+</html>
